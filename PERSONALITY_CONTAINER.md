@@ -25,3 +25,14 @@ This enables:
 ### 1.2. Container Structure
 
 The container is an **encrypted archive** (or structured file, e.g., JSON with attachments) stored on the user's VPS.
+
+VPS:
+1. personalities:
+1.2 user_12345_personality.v1.enc (main container)
+1.3 metadata (ID, version, creation date)
+1.4 character_traits (structured parameters)
+1.5 knowledge (compressed embeddings or file references)
+1.6 constitution (core rules, prohibitions, values)
+1.7 user_12345_personality.v2.enc (updated version)
+2. user_memory/
+3. user_12345_memory.enc (conversation history, encrypted separately)
